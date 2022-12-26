@@ -22,9 +22,9 @@
             width: 36px;
         }
         .btn{
-            margin: 5px 18px;
-            width: 80px;
-            height: 40px;
+            margin: 5px 15px;
+            width: 60px;
+            height: 30px;
         }
         .lbl{
             color: blue;
@@ -63,6 +63,9 @@
                         <asp:Button CssClass="btn" ID="btnTru" runat="server" Text="Trừ" OnClick="btnTru_Click" />
                         <asp:Button CssClass="btn" ID="btnNhan" runat="server" Text="Nhân" OnClick="btnNhan_Click" />
                         <asp:Button CssClass="btn" ID="btnChia" runat="server" Text="Chia" OnClick="btnChia_Click" />
+                        <asp:Button CssClass="btn" ID="btnclear" runat="server" Text="Clear" OnClick="btnclear_Click" />
+                        
+
                     </td>
                 </tr>
                 <tr>

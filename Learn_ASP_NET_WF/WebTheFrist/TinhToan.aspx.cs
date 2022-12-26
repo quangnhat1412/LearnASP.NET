@@ -54,5 +54,12 @@ namespace WebTheFrist
 
             txtKQ.Text = kq.ToString();
         }
+
+        protected void btnclear_Click(object sender, EventArgs e)
+        {
+            txts1.Text = "";
+            txts2.Text = "";
+            txtKQ.Text = "";
+        }
     }
 }
