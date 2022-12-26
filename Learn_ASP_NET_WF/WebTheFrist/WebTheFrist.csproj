@@ -67,12 +67,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CauChao.aspx" />
+    <Content Include="Dulich.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Global.asax" />
     <Content Include="TinhToan.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CauChao.aspx.cs">
+      <DependentUpon>CauChao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CauChao.aspx.designer.cs">
+      <DependentUpon>CauChao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dulich.aspx.cs">
+      <DependentUpon>Dulich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dulich.aspx.designer.cs">
+      <DependentUpon>Dulich.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
