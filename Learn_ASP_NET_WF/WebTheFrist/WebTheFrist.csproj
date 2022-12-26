@@ -71,6 +71,7 @@
     <Content Include="Dulich.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="TaoDanhSach.aspx" />
     <Content Include="TinhToan.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -100,6 +101,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaoDanhSach.aspx.cs">
+      <DependentUpon>TaoDanhSach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaoDanhSach.aspx.designer.cs">
+      <DependentUpon>TaoDanhSach.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TinhToan.aspx.cs">
       <DependentUpon>TinhToan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
