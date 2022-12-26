@@ -67,7 +67,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Label CssClass="lbl" ID="Label3" runat="server" Text="Kết quả:"></asp:Label>
+                        <asp:Label CssClass="lbl" ID="Label3" runat="server" Text="KQ:"></asp:Label>
                     </td>
                     <td class="auto-style3">
                         <asp:TextBox ID="txtKQ" runat="server" Width="303px" Height="30px"></asp:TextBox>
