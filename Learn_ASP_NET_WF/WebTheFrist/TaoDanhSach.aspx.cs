@@ -17,8 +17,12 @@ namespace WebTheFrist
         protected void btnThem_Click(object sender, EventArgs e)
         {
             // thêm danh sách sinh viên vào listbox khi btnThem dc ckick
-            lstDS.Items.Add(txtThem.Text);
-            
+            string name = txtThem.Text;
+            ListItem newlbl = new ListItem(name);
+            if (!lstDS.Items.Contains(newlbl)) //kiểm tra xem tên có trùng với tên đã có trong danh sách chưa
+            {
+                lstDS.Items.Add(newlbl); // Nếu không trùng thì thêm vào
+            } 
         }
     }
 }

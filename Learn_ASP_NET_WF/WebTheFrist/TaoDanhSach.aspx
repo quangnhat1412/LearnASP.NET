@@ -12,6 +12,10 @@
         }
         .auto-style2 {
             width: 136px;
+            height: 47px;
+        }
+        .auto-style3 {
+            height: 47px;
         }
     </style>
 </head>
@@ -26,7 +30,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="txtThem" runat="server" Height="34px" Width="302px"></asp:TextBox>
                     </td>
                     <td class="auto-style2">
@@ -35,7 +39,7 @@
                 </tr>
                  <tr>
                     <td colspan="2">
-                        <asp:ListBox ID="lstDS" SelectionMode="Multiple" runat="server" Height="222px" Width="442px"></asp:ListBox>
+                        <asp:ListBox ID="lstDS" SelectionMode="Multiple" runat="server" Height="222px" Width="477px"></asp:ListBox>
                      </td>
                 </tr>
             </table>
