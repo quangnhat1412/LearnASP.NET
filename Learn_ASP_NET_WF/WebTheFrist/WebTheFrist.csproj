@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CauChao.aspx" />
+    <Content Include="DonDatHang.aspx" />
     <Content Include="Dulich.aspx" />
+    <Content Include="Img\Delete.png" />
     <Content Include="Index.aspx" />
     <Content Include="Global.asax" />
     <Content Include="TaoDanhSach.aspx" />
@@ -83,6 +85,13 @@
     </Compile>
     <Compile Include="CauChao.aspx.designer.cs">
       <DependentUpon>CauChao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonDatHang.aspx.cs">
+      <DependentUpon>DonDatHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonDatHang.aspx.designer.cs">
+      <DependentUpon>DonDatHang.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dulich.aspx.cs">
       <DependentUpon>Dulich.aspx</DependentUpon>
