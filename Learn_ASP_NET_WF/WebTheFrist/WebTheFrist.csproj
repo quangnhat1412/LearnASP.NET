@@ -68,14 +68,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CauChao.aspx" />
+    <Content Include="CheckSN.aspx" />
     <Content Include="DonDatHang.aspx" />
     <Content Include="Dulich.aspx" />
     <Content Include="Img\Delete.png" />
     <Content Include="Index.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Panels.aspx" />
     <Content Include="TaoDanhSach.aspx" />
     <Content Include="ThongTinCaNhan.aspx" />
     <Content Include="TinhToan.aspx" />
+    <Content Include="Uploadfile.aspx" />
+    <Content Include="ViewUpLoad.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +89,13 @@
     </Compile>
     <Compile Include="CauChao.aspx.designer.cs">
       <DependentUpon>CauChao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckSN.aspx.cs">
+      <DependentUpon>CheckSN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckSN.aspx.designer.cs">
+      <DependentUpon>CheckSN.aspx</DependentUpon>
     </Compile>
     <Compile Include="DonDatHang.aspx.cs">
       <DependentUpon>DonDatHang.aspx</DependentUpon>
@@ -110,6 +121,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Panels.aspx.cs">
+      <DependentUpon>Panels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels.aspx.designer.cs">
+      <DependentUpon>Panels.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaoDanhSach.aspx.cs">
       <DependentUpon>TaoDanhSach.aspx</DependentUpon>
@@ -132,6 +150,20 @@
     <Compile Include="TinhToan.aspx.designer.cs">
       <DependentUpon>TinhToan.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Uploadfile.aspx.cs">
+      <DependentUpon>Uploadfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uploadfile.aspx.designer.cs">
+      <DependentUpon>Uploadfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUpLoad.aspx.cs">
+      <DependentUpon>ViewUpLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUpLoad.aspx.designer.cs">
+      <DependentUpon>ViewUpLoad.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -145,6 +177,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Upload\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

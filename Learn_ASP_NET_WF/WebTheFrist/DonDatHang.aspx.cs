@@ -14,6 +14,7 @@ namespace WebTheFrist
 
         }
 
+
         public bool IsNumber(string pValue)
         {
             foreach (Char c in pValue)
@@ -55,7 +56,7 @@ namespace WebTheFrist
 
         protected void btnDelete_Click(object sender, ImageClickEventArgs e)
         {
-            // Xóa cách bánh dc chọn trong listbox
+            // Xóa cách bánh dc chọn trong listbox, Lưu ý khi xóa trong listbox thì phải xóa từ phần tử cuối lên
             for(int i = lstBanh.Items.Count - 1; i >= 0; i--)
             {
                 if(lstBanh.Items[i].Selected) // Nếu bánh đó đang dc chọn
@@ -68,19 +69,22 @@ namespace WebTheFrist
         protected void btnIn_Click(object sender, EventArgs e)
         {
             string kq = "";
-            if(txtHoTen.Text =="" || IsNumber(txtHoTen.Text))
+            if(txtHoTen.Text == "" || IsNumber(txtHoTen.Text))
             {
-                lblLoiTen.Text= "Họ tên không hợp lệ";
+                lblLoiTen.Text = "Họ tên không hợp lệ";
+                lblThongTin.Text = "";
                 return;
             }
             if (txtDC.Text == "")
             {
                 lblLoiDC.Text = "Địa chỉ không hợp lệ";
+                lblThongTin.Text = "";
                 return;
             }
             if (txtMST.Text == "")
             {
                 lblLoiMST.Text = "Mã số thuế không hợp lệ";
+                lblThongTin.Text = "";
                 return;
             }
             else
@@ -88,7 +92,7 @@ namespace WebTheFrist
                 lblLoiDC.Text = "";
                 lblLoiTen.Text = "";
                 lblLoiMST.Text = "";
-                // In thông tin có được 
+                // In thông tin khách hàng có được 
                 kq += "<div style='border: 1px solid red'>";
                 kq += "<h2 style='text-align: center; color: red;'>HÓA ĐƠN ĐẶT HÀNG</h2>";
                 kq += "<p style='padding-left: 10px'>Họ Tên: " + txtHoTen.Text + "</p>";

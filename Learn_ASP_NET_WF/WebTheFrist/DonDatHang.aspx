@@ -130,6 +130,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" class="auto-style3" >
+                        <br/> 
                         <asp:Label CssClass="Error" ID="lblThongTin" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
