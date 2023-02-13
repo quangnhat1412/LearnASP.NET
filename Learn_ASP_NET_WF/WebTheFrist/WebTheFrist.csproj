@@ -67,10 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Calc.aspx" />
     <Content Include="CauChao.aspx" />
     <Content Include="CheckSN.aspx" />
+    <Content Include="dangki.aspx" />
     <Content Include="DonDatHang.aspx" />
     <Content Include="Dulich.aspx" />
+    <Content Include="HoSoDangKi.aspx" />
     <Content Include="Img\Delete.png" />
     <Content Include="Index.aspx" />
     <Content Include="Global.asax" />
@@ -83,6 +86,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calc.aspx.cs">
+      <DependentUpon>Calc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calc.aspx.designer.cs">
+      <DependentUpon>Calc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CauChao.aspx.cs">
       <DependentUpon>CauChao.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -97,6 +107,13 @@
     <Compile Include="CheckSN.aspx.designer.cs">
       <DependentUpon>CheckSN.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dangki.aspx.cs">
+      <DependentUpon>dangki.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dangki.aspx.designer.cs">
+      <DependentUpon>dangki.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DonDatHang.aspx.cs">
       <DependentUpon>DonDatHang.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -110,6 +127,13 @@
     </Compile>
     <Compile Include="Dulich.aspx.designer.cs">
       <DependentUpon>Dulich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoSoDangKi.aspx.cs">
+      <DependentUpon>HoSoDangKi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoSoDangKi.aspx.designer.cs">
+      <DependentUpon>HoSoDangKi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

@@ -18,7 +18,7 @@
         }
         .auto-style4 {
             width: 366px;
-            height: 23px;
+            height: 26px;
         }
         #txtSoLuong{
             margin: 2px 5px
@@ -46,6 +46,10 @@
         }
         .Error{
             color: red;
+        }
+        
+        .auto-style10 {
+            height: 26px;
         }
         
     </style>
@@ -90,7 +94,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style10">
                         <asp:Label ID="Label4" runat="server" Text="Chọn Các Loại Bánh Sau:"></asp:Label>
                     </td>
                     <td class="auto-style4">
@@ -99,7 +103,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style5 khung">
-                        <asp:DropDownList ID="ddldsBanh" runat="server" Height="26px" Width="200px">
+                        <asp:DropDownList ID="ddldsBanh" runat="server" Height="26px" Width="200px" OnSelectedIndexChanged="ddldsBanh_SelectedIndexChanged">
                             <asp:ListItem>Hamburger</asp:ListItem>
                             <asp:ListItem>Bánh Bò Nướng</asp:ListItem>
                             <asp:ListItem>Bánh Hột Vịt </asp:ListItem>

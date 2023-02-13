@@ -121,5 +121,14 @@ namespace WebTheFrist
             
         }
 
+        protected void lstBanh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ddldsBanh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -76,7 +76,7 @@
                         <asp:Label ID="Label2" runat="server" Text="Giới tính:"></asp:Label>
                     </td>
                     <td class="auto-style4">
-                        <asp:RadioButton ID="rbtNam" GroupName="GT" runat="server" Text="Nam" />
+                        <asp:RadioButton ID="rbtNam" GroupName="GT" runat="server" Text="Nam" OnCheckedChanged="rbtNam_CheckedChanged" />
                         <asp:RadioButton ID="rbtNu" GroupName="GT" runat="server" Text="Nữ"/>
                     </td>
                 </tr>

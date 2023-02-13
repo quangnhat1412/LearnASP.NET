@@ -98,5 +98,9 @@ namespace WebTheFrist
             lblThongTin.Text = kq;
         }
 
+        protected void rbtNam_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
