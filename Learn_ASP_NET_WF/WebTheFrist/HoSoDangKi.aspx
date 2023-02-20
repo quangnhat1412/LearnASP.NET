@@ -72,6 +72,14 @@
         .auto-style14 {
             width: 313px;
         }
+        .auto-style15 {
+            width: 180px;
+            height: 34px;
+        }
+        .auto-style16 {
+            width: 313px;
+            height: 34px;
+        }
     </style>
 </head>
 <body>
@@ -94,22 +102,22 @@
                                 <td class="auto-style4">Tên đăng nhập: </td>
                                 <td class="auto-style14">
                                     <asp:TextBox ID="txtTk" runat="server" Width="225px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvtk" runat="server" ErrorMessage="Tên đăng nhập rỗng !" ControlToValidate="txtTk" ForeColor="Red">(*)</asp:RequiredFieldValidator>
+                                    &nbsp;<asp:RequiredFieldValidator ID="rfvtk" runat="server" ErrorMessage="Tên đăng nhập rỗng !" ControlToValidate="txtTk" ForeColor="Red">(*)</asp:RequiredFieldValidator>
                                     <asp:RegularExpressionValidator ID="revtendk" runat="server" ErrorMessage="Tên đăng nhập không hợp lệ !" ForeColor="Red" ValidationExpression="[\d|\w|!|&|_]{8}[\d|\w|!|&|_]+" ControlToValidate="txtTk">(*)</asp:RegularExpressionValidator>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style5">Mật khẩu: </td>
                                 <td class="auto-style13">
-                                    <asp:TextBox ID="txtmk" runat="server" Width="225px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvmk" runat="server" ErrorMessage="Mật khẩu rổng !" ControlToValidate="txtmk" ForeColor="Red">(*)</asp:RequiredFieldValidator>
+                                    <asp:TextBox ID="txtmk" runat="server" Width="225px" TextMode="Password" ></asp:TextBox>
+                                    &nbsp;<asp:RequiredFieldValidator ID="rfvmk" runat="server" ErrorMessage="Mật khẩu rổng !" ControlToValidate="txtmk" ForeColor="Red">(*)</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style4">Nhập lại mật khẩu :</td>
                                 <td class="auto-style14">
-                                    <asp:TextBox ID="txtnlmk" runat="server" Width="225px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvnlmk" runat="server" ErrorMessage="Nhập lại mật khẩu rổng !" ControlToValidate="txtnlmk" Display="Dynamic" ForeColor="Red">(*)</asp:RequiredFieldValidator>
+                                    <asp:TextBox ID="txtnlmk" runat="server" Width="225px" TextMode="Password"></asp:TextBox>
+                                    &nbsp;<asp:RequiredFieldValidator ID="rfvnlmk" runat="server" ErrorMessage="Nhập lại mật khẩu rổng !" ControlToValidate="txtnlmk" Display="Dynamic" ForeColor="Red">(*)</asp:RequiredFieldValidator>
                                     <asp:CompareValidator ID="cvnlmk" runat="server" ErrorMessage="Mật khẩu nhập lại không trùng khớp !" ControlToCompare="txtmk" ControlToValidate="txtnlmk" ForeColor="Red">(*)</asp:CompareValidator>
                                 </td>
                             </tr>
@@ -135,7 +143,7 @@
                                 <td class="auto-style4">Họ tên khách hàng:</td>
                                 <td class="auto-style9">
                                     <asp:TextBox ID="txthoten" runat="server" Width="225px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvTenkh" runat="server" ErrorMessage="Tên khách hàng rỗng !" ControlToValidate="txthoten" ForeColor="Red">(*)</asp:RequiredFieldValidator>
+                                    &nbsp;<asp:RequiredFieldValidator ID="rfvTenkh" runat="server" ErrorMessage="Tên khách hàng rỗng !" ControlToValidate="txthoten" ForeColor="Red">(*)</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                             <tr>
@@ -156,14 +164,14 @@
                                 <td class="auto-style4">Email:</td>
                                 <td class="auto-style9">
                                     <asp:TextBox ID="txtEmail" runat="server" Width="225px"></asp:TextBox>
-                                    <asp:RegularExpressionValidator ID="revEmail" runat="server" ErrorMessage="Email không hợp lệ !" ControlToValidate="txtEmail" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">(*)</asp:RegularExpressionValidator>
+                                    &nbsp;<asp:RegularExpressionValidator ID="revEmail" runat="server" ErrorMessage="Email không hợp lệ !" ControlToValidate="txtEmail" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">(*)</asp:RegularExpressionValidator>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style4">Thu nhập:</td>
                                 <td class="auto-style9">
                                     <asp:TextBox ID="txtthunhap" runat="server" Width="225px"></asp:TextBox>
-                                    <asp:RangeValidator ID="rvthunhap" runat="server" ErrorMessage="Thu nhập 1rtr - 50tr" ControlToValidate="txtthunhap" ForeColor="Red" MaximumValue=" 50000000" MinimumValue="1000000" Type="Integer">(*)</asp:RangeValidator>
+                                    &nbsp;<asp:RangeValidator ID="rvthunhap" runat="server" ErrorMessage="Thu nhập 1rtr - 50tr" ControlToValidate="txtthunhap" ForeColor="Red" MaximumValue=" 50000000" MinimumValue="1000000" Type="Integer">(*)</asp:RangeValidator>
                                 </td>
                             </tr>
                             <tr>
@@ -176,23 +184,23 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="auto-style4">Địa chỉ: </td>
-                                <td class="auto-style9">
+                                <td class="auto-style15">Địa chỉ: </td>
+                                <td class="auto-style16">
                                     <asp:TextBox ID="txtdiachi" runat="server" Width="225px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvdiachi" runat="server" ErrorMessage="Địa chỉ rỗng !" ControlToValidate="txtdiachi" ForeColor="Red">(*)</asp:RequiredFieldValidator>
+                                    &nbsp;<asp:RequiredFieldValidator ID="rfvdiachi" runat="server" ErrorMessage="Địa chỉ rỗng !" ControlToValidate="txtdiachi" ForeColor="Red">(*)</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style4">Điện thoại:</td>
                                 <td class="auto-style9">
-                                    <asp:TextBox ID="txtsdt" runat="server" Width="225px"></asp:TextBox>
-                                    <asp:RegularExpressionValidator ID="revsdt" runat="server" ErrorMessage="Số điện thoại không hợp lệ !" ControlToValidate="txtsdt" ValidationExpression="0\d{9}" ForeColor="Red">(*)</asp:RegularExpressionValidator>
+                                    <asp:TextBox ID="txtsdt" runat="server" Width="225px" TextMode="Password"></asp:TextBox>
+                                    &nbsp;<asp:RegularExpressionValidator ID="revsdt" runat="server" ErrorMessage="Số điện thoại không hợp lệ !" ControlToValidate="txtsdt" ValidationExpression="0\d{9}" ForeColor="Red">(*)</asp:RegularExpressionValidator>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style4">&nbsp;</td>
                                 <td class="auto-style9">
-                                    <asp:Button ID="btndangki" runat="server" Text="Đăng kí" OnClick="btndangki_Click" />
+                                    <asp:Button ID="btndangki" runat="server" Text="Đăng kí" OnClick="btndangki_Click" Height="45px" Width="90px" />
                                 </td>
                             </tr>
                         </table>

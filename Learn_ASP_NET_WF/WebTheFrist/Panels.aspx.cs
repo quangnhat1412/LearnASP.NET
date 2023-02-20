@@ -26,5 +26,10 @@ namespace WebTheFrist
             }
            
         }
+
+        protected void ChkST_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

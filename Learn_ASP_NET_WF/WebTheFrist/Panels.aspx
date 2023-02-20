@@ -29,7 +29,7 @@
                 </div>
             </asp:Panel>
             <div>
-                <asp:CheckBox ID="ChkST" AutoPostBack="true" runat="server" text="Hiển thị sở thích" Checked="true"/><br />
+                <asp:CheckBox ID="ChkST" AutoPostBack="true" runat="server" text="Hiển thị sở thích" Checked="true" OnCheckedChanged="ChkST_CheckedChanged"/><br />
                 <asp:CheckBox ID="ChkNN" AutoPostBack="true" runat="server" text="Hiển thị nghề nghiệp"  Checked="true"/>
             </div>
         </div>

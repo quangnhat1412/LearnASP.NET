@@ -26,11 +26,14 @@
         .auto-style6 {
             height: 17px;
         }
+        .auto-style7 {
+            height: 423px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="auto-style7">
 
             <table align="center" class="auto-style1">
                 <tr>
