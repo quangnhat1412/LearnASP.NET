@@ -9,12 +9,15 @@
         .auto-style1 {
             margin-top: 6px;
         }
+        .auto-style2 {
+            margin-right: 3px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Quản Lý Nhân Viên</h2>
+            <h2 style="text-align:center;">Quản Lý Nhân Viên</h2>
             <asp:SqlDataSource ID="dsnv" runat="server" 
                 ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString %>" 
                 DeleteCommand="DELETE FROM [NhanVien] WHERE [MaNV] = @MaNV" 
@@ -55,19 +58,36 @@
                     <asp:BoundField DataField="MaPhong" HeaderText="MaPhong" SortExpression="MaPhong" />
                 </Columns>
             </asp:GridView>--%>
-
-            <asp:GridView ID="gvnv" runat="server" DataSourceID="dsnv" AutoGenerateColumns="False" DataKeyNames="MaNV" Width="751px" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" Height="250px" PageSize="5">
+            <div style="margin: 0 auto; width:80%;">
+            <asp:GridView ID="gvnv" runat="server" DataSourceID="dsnv" AutoGenerateColumns="False" DataKeyNames="MaNV" Width="100%" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" Height="250px" PageSize="5" CssClass="auto-style2">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:BoundField HeaderText="Mã Nhân Viên" DataField="MaNV" ReadOnly="true"/>
                     <asp:BoundField HeaderText="Họ Nhân Viên" DataField="HoNV" />
                     <asp:BoundField HeaderText="Tên Nhân Viên" DataField="tenNV" />
-                    <asp:CheckBoxField HeaderText="Phái" DataField="Phai" />
+                    <asp:TemplateField HeaderText="Giới Tính">
+                        <ItemTemplate>
+                            <asp:Label ID="lblgioitinh" runat="server" Text='<%# (bool)Eval("Phai") == true? "Nam" : "Nữ" %>'></asp:Label>
+                        </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:DropDownList ID="ddlgioitinh" runat="server" SelectedValue='<%# Bind("Phai") %>'>
+                                <asp:ListItem Value="True">Nam</asp:ListItem>
+                                <asp:ListItem Value="False">Nữ</asp:ListItem>
+                            </asp:DropDownList>
+                        </EditItemTemplate>
+                    </asp:TemplateField>
                     <asp:BoundField HeaderText="Ngày Sinh" DataField="NgaySinh" DataFormatString="{0: dd/MM/yyyy}"/>
                     <asp:BoundField HeaderText="Nơi Sinh" DataField="noisinh" />
                     <asp:BoundField HeaderText="Mã Phòng" DataField="maphong" />
+                    <asp:CommandField HeaderText="Chức năng" ShowEditButton="true" ButtonType="Button"/>
+                    <asp:TemplateField HeaderText="Tác vụ">
+                        <ItemTemplate>
+                            <asp:Button ID="btnxoa" runat="server" Text="Xóa" CommandName="Delete" OnClientClick="return confirm('Bạn có đồng ý xóa nhân viên này không?')"/>
+                        </ItemTemplate>
+                        <EditItemTemplate>
 
-                    <asp:CommandField ShowEditButton="true" ButtonType="Button" ShowDeleteButton="true" DeleteText="Xóa"/>
+                        </EditItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
                 <EditRowStyle BackColor="#7C6F57" />
                 <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -80,6 +100,7 @@
                 <SortedDescendingCellStyle BackColor="#D4DFE1" />
                 <SortedDescendingHeaderStyle BackColor="#15524A" />
             </asp:GridView>
+            </div>
         </div>
     </form>
 </body>

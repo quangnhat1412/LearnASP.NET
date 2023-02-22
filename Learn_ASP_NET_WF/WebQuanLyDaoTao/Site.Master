@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebQuanLyDaoTao.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        #Warrap{ 
+            width: 70%;
+            margin: 0 auto;
+        }
+        #Header{
+            background-color: steelblue;
+            width: 100%;
+            min-height: 50px;
+        }
+        #Menu{
+            background-color: springgreen;
+            width: 100%;
+            min-height: 50px;
+        }
+        #Content{
+            background-color: red;
+            width: 100%;
+            min-height: 50px;
+            position:relative;
+        }
+        #cttLeft{
+            position:absolute;
+            background-color: blue;
+            width: 30%;
+            height: 300px; 
+            left:0px;
+        }
+        #cttRight{
+            position:absolute;
+            background-color: yellow;
+            width: 69%;
+            height: 300px; 
+            right: 0px;
+        }
+        #Footer{           
+            background-color: red;
+            width: 100%;
+            min-height: 50px;      
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="Warrap">
+            <div id="Header">
+                header
+            </div>
+            <div id="Menu">
+                Menu
+            </div>
+            <div id="Content">
+                <div id="cttLeft">
+                    content left
+                    lien ket1 
+                    lien ket2
+                </div>
+                <div id="cttRight">
+
+                    <asp:ContentPlaceHolder ID="NoiDung" runat="server" >
+
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+            <div id="Footer"></div>
+
+        </div>
+    </form>
+</body>
+</html>
