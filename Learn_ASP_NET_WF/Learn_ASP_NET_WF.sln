@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTheFrist", "WebTheFrist\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02_CSDL_CoBan", "Lab02_CSDL_CoBan\Lab02_CSDL_CoBan.csproj", "{11B1A37B-7B31-4B54-8704-F6329BFA336A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebQuanLyDaoTao", "WebQuanLyDaoTao\WebQuanLyDaoTao.csproj", "{12B0D718-0889-43E9-8A3E-76103D45F9E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebQLDaoTao", "WebQLDaoTao\WebQLDaoTao.csproj", "{584BFFA8-90B7-4A6D-BDFE-6156BE820AB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{11B1A37B-7B31-4B54-8704-F6329BFA336A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11B1A37B-7B31-4B54-8704-F6329BFA336A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11B1A37B-7B31-4B54-8704-F6329BFA336A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{12B0D718-0889-43E9-8A3E-76103D45F9E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12B0D718-0889-43E9-8A3E-76103D45F9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12B0D718-0889-43E9-8A3E-76103D45F9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12B0D718-0889-43E9-8A3E-76103D45F9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{584BFFA8-90B7-4A6D-BDFE-6156BE820AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{584BFFA8-90B7-4A6D-BDFE-6156BE820AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{584BFFA8-90B7-4A6D-BDFE-6156BE820AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{584BFFA8-90B7-4A6D-BDFE-6156BE820AB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
