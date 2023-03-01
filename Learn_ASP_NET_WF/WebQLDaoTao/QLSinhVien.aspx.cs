@@ -42,6 +42,7 @@ namespace WebQLDaoTao
             string noisinh = txtNoiSinh.Text;
             string diachi = txtDiaChi.Text;
             string makh = ddlMaKhoa.SelectedValue;
+
             // Kiểm tra khóa chính của sinh viên
             if (svDao.findById(masv) != null)
             {
