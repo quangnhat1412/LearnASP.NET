@@ -33,6 +33,8 @@ namespace WebQLDaoTao
             //goi phuong thuc thêm khoa vào CSDL
             khDAO.Insert(makh, tenkh);
             lbThongBao.Text = "Đã thêm 1 khoa";
+            txtMaKH.Text = "";
+            txtTenKH.Text = "";
             //liên kết dữ liệu cho gvkhoa
             gvKhoa.DataSource = khDAO.getAll();
             gvKhoa.DataBind();

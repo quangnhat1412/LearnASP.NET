@@ -19,6 +19,8 @@ namespace WebQLDaoTao
             else
             {
                 lbUserName.Text = "Tên đăng nhập:" + tk.TenDangNhap;
+                lblTennd.Text = tk.TenDangNhap;
+                lblvaitro.Text = tk.VaiTro;
             }
         }
 

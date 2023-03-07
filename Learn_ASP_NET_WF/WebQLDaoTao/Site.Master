@@ -93,7 +93,7 @@
             </div>
         </div>
         <footer class="container-fluid text-center">
-            <p>Sinh thực hiện: MSSV - HOTEN</p>
+            <p>Người Sử Dụng: <asp:Label ID="lblTennd" runat="server" Text=""></asp:Label> - <asp:Label ID="lblvaitro" runat="server" Text=""></asp:Label></p>
         </footer>
     </form>
 </body>

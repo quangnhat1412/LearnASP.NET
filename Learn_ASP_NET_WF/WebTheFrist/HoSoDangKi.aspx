@@ -114,8 +114,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="auto-style4">Nhập lại mật khẩu :</td>
-                                <td class="auto-style14">
+                                <td class="auto-style15">Nhập lại mật khẩu :</td>
+                                <td class="auto-style16">
                                     <asp:TextBox ID="txtnlmk" runat="server" Width="225px" TextMode="Password"></asp:TextBox>
                                     &nbsp;<asp:RequiredFieldValidator ID="rfvnlmk" runat="server" ErrorMessage="Nhập lại mật khẩu rổng !" ControlToValidate="txtnlmk" Display="Dynamic" ForeColor="Red">(*)</asp:RequiredFieldValidator>
                                     <asp:CompareValidator ID="cvnlmk" runat="server" ErrorMessage="Mật khẩu nhập lại không trùng khớp !" ControlToCompare="txtmk" ControlToValidate="txtnlmk" ForeColor="Red">(*)</asp:CompareValidator>

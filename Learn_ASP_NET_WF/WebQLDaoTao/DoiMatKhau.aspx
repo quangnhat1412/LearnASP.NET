@@ -19,8 +19,7 @@
                             <label class="control-label col-sm-3" for="email">
                                 Tên đăng nhập:</label>
                             <div class="col-sm-9">
-                                <asp:TextBox ID="txtTenDangNhap" runat="server"
-                                    CssClass="form-control" placeholder="Enter username"></asp:TextBox>                        
+                                <asp:Label CssClass="form-control" ID="lbltendangnhap" runat="server" Text=""></asp:Label>
                             </div>               
                         </div>
                         <div class="form-group">
@@ -29,6 +28,7 @@
                             <div class="col-sm-9">
                                 <asp:TextBox ID="txtMatKhau" runat="server"
                                     TextMode="Password" CssClass="form-control" placeholder="Enter password"></asp:TextBox>
+                                 
                             </div>
                         </div>
                         <div class="form-group">
@@ -43,7 +43,7 @@
                             <label class="control-label col-sm-3" for="email">
                                 Nhập lại mật khẩu mới:</label>
                             <div class="col-sm-9">
-                                <asp:TextBox ID="txtmkmoi" runat="server"
+                                <asp:TextBox ID="txtnlmkmoi" runat="server"
                                     TextMode="Password" CssClass="form-control" placeholder="Enter password"></asp:TextBox>
                             </div>
                         </div>

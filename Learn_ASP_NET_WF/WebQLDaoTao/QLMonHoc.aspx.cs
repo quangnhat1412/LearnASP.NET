@@ -68,7 +68,7 @@ namespace WebQLDaoTao
             }
             catch (Exception)
             {
-                Response.Write("<script> alert('Không thể xóa môn học này')</script>");
+                Response.Write("<script> alert('Không thể xóa môn học này do tồn tại sinh viên có điểm này trong table KETQUA')</script>");
             }
 
         }
@@ -101,7 +101,7 @@ namespace WebQLDaoTao
                 }
                 // Gọi phương thức thêm môn học trong Class MonHocDAO
                 mhDAO.Insert(mamh, tenmh, sotiet); // Lệnh thêm dữ liệu
-                lbThongBao.Text = "Thêm Môn Học Thành Công!!!";
+                Response.Write("<script> alert('Thêm môn học thành công!!!')</script>");
                 txtMaMH.Text = "";
                 txtSoTiet.Text = "";
                 txtTenMH.Text = "";

@@ -22,7 +22,7 @@ namespace WebQLDaoTao
                 ddlMonHoc.DataValueField = "mamh";
                 ddlMonHoc.DataBind();
                 //chèn thêm 1 item để nhắc người dùng chọn môn học
-                ddlMonHoc.Items.Insert(0, new ListItem("--Chọn môn học-", ""));
+                ddlMonHoc.Items.Insert(0, new ListItem("--Chọn môn học--", ""));
             }
 
         }
@@ -59,5 +59,9 @@ namespace WebQLDaoTao
             //thông báo trạng thái cập nhật;
         }
 
+        protected void gvKetQua_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -61,25 +61,35 @@
             </div>
         </div>
     </div>
-    <div >
-        <asp:GridView ID="gvSinhvien" DataKeyNames="Masv"
+    <div class="table-responsive" >
+        <asp:GridView ID="gvSinhvien" DataKeyNames="Masv" 
             OnRowEditing="gvSinhvien_RowEditing"
             OnRowDataBound="gvSinhvien_RowDataBound"
             OnRowUpdating="gvSinhvien_RowUpdating"
             OnRowCancelingEdit="gvSinhvien_RowCancelingEdit"
             OnRowDeleting="gvSinhvien_RowDeleting"
             OnPageIndexChanging="gvSinhvien_PageIndexChanging"
-            AllowPaging="True" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered" CellPadding="3" PageSize="10" ForeColor="#333333">
+            AllowPaging="True" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered" CellPadding="3" PageSize="7" ForeColor="#333333">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
-                <asp:BoundField DataField="masv" HeaderText="Mã SV" />
-                <asp:BoundField DataField="hosv" HeaderText="Họ SV" />
-                <asp:BoundField DataField="tensv" HeaderText="Tên SV" />
-                <asp:CheckBoxField DataField="gioitinh" HeaderText="Giới tính" />
-                <asp:BoundField DataField="ngaysinh" HeaderText="ngày sinh" DataFormatString="{0:dd/MM/yyyy}" />
-                <asp:BoundField DataField="noisinh" HeaderText="Nơi sinh" />
+                <asp:BoundField DataField="masv" HeaderText="Mã SV" ReadOnly="true"/>
+                <asp:BoundField DataField="hosv" HeaderText="Họ SV" ControlStyle-Width="120px"/>
+                <asp:BoundField DataField="tensv" HeaderText="Tên SV" ControlStyle-Width="100px"/>
+                <asp:TemplateField HeaderText="Giới Tính">
+                    <ItemTemplate>
+                        <asp:Label ID="lblgioitinh" runat="server" Text='<%# (bool)Eval("gioitinh") == true? "Nam" : "Nữ" %>'></asp:Label>
+                    </ItemTemplate>
+                    <EditItemTemplate>
+                        <asp:DropDownList ID="ddlgioitinh" runat="server" SelectedValue='<%# Bind("gioitinh") %>'>
+                            <asp:ListItem Value="True">Nam</asp:ListItem>
+                            <asp:ListItem Value="False">Nữ</asp:ListItem>
+                        </asp:DropDownList>
+                    </EditItemTemplate>
+                </asp:TemplateField>
+                <asp:BoundField DataField="ngaysinh" HeaderText="ngày sinh" DataFormatString="{0:dd/MM/yyyy}"/>               
+                <asp:BoundField DataField="noisinh" HeaderText="Nơi sinh" ControlStyle-Width="70px" />
                 <asp:BoundField DataField="diachi" HeaderText="Địa chỉ" />
-                <asp:TemplateField HeaderText="Mã khoa">
+                <asp:TemplateField HeaderText="Mã Khoa">
                     <ItemTemplate>
                         <asp:Label ID="lbMakh" runat="server" Text='<%# Eval("Makh") %>'></asp:Label>
                     </ItemTemplate>
@@ -91,12 +101,11 @@
                 <asp:TemplateField HeaderText="Chọn tác vụ">
                     <ItemTemplate>
                         <asp:Button ID="btEdit" CommandName="Edit" runat="server" Text="Sửa" CssClass="btn btnsuccess" />
-                        <asp:Button ID="btDelete" CommandName="Delete" runat="server" OnClientClick="return confirm('Bạn có chắc muốn xóa sinh viên này?')"
-                            Text="Xóa" CssClass="btn btn-danger" />
+                        <asp:Button ID="btDelete" CommandName="Delete" runat="server" OnClientClick="return confirm('Bạn có chắc muốn xóa sinh viên này?')" Text="Xóa" CssClass="btn btn-danger" />
                     </ItemTemplate>
-                    <EditItemTemplate>
-                        <asp:Button ID="btUpdate" CommandName="Update" runat="server" Text="Ghi" CssClass="btn btnprimary" />
-                        <asp:Button ID="btCancel" CommandName="Cancel" runat="server" Text="Không" CssClass="btn btn-warning" />
+                    <EditItemTemplate >
+                        <asp:Button ID="btUpdate" CommandName="Update" runat="server" Text="Ghi" CssClass="btn btn-primary"/>
+                        <asp:Button ID="btCancel" CommandName="Cancel" runat="server" Text="Không" CssClass="btn btn-warning"/>
                     </EditItemTemplate>
                 </asp:TemplateField>
             </Columns>

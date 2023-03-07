@@ -20,7 +20,7 @@
                                 Tên đăng nhập:</label>
                             <div class="col-sm-9">
                                 <asp:TextBox ID="txtTenDangNhap" runat="server"
-                                    CssClass="form-control" placeholder="Enter username"></asp:TextBox>
+                                    CssClass="form-control" placeholder="Enter username" Text="quangnhat"></asp:TextBox>
                             </div>
                         </div>
                         <div class="form-group">
@@ -28,7 +28,7 @@
                                 Mật khẩu:</label>
                             <div class="col-sm-9">
                                 <asp:TextBox ID="txtMatKhau" runat="server"
-                                    TextMode="Password" CssClass="form-control" placeholder="Enter password"></asp:TextBox>
+                                    TextMode="Password" CssClass="form-control" Text="123456" placeholder="Enter password"></asp:TextBox>
                             </div>
                         </div>
                         <div class="form-group">

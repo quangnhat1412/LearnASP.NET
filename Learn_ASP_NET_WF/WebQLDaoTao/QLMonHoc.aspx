@@ -16,8 +16,9 @@
                     OnRowCancelingEdit="gvMonhoc_RowCancelingEdit"
                     OnRowUpdating="gvMonhoc_RowUpdating"
                     OnRowDeleting="gvMonhoc_RowDeleting"
-                    AllowPaging="true" PageSize="10"
-                    OnPageIndexChanging="gvMonhoc_PageIndexChanging">
+                    AllowPaging="true" PageSize="5"
+                    OnPageIndexChanging="gvMonhoc_PageIndexChanging"
+                    >           
                     <Columns>
                         <asp:BoundField HeaderText="Mã môn học" DataField="MaMH" />
                         <asp:BoundField HeaderText="Tên môn học" DataField="TenMH" />
@@ -27,7 +28,7 @@
                                 <asp:Button ID="btEdit" CommandName="Edit" runat="server" Text="Sửa"
                                     CssClass="btn btn-success" />
                                 <asp:Button ID="btDelete" CommandName="Delete" runat="server"
-                                    Text="Xóa" CssClass="btn btn-danger" />
+                                    OnClientClick="return confirm('Bạn có chắc muốn xóa môn học?')" Text="Xóa" CssClass="btn btn-danger"/>
                             </ItemTemplate>
                             <EditItemTemplate>
                                 <asp:Button ID="btUpdate" CommandName="Update" runat="server"

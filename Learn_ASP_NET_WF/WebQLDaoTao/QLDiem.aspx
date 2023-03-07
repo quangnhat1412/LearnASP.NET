@@ -16,13 +16,14 @@
     </div>
     <hr />
     <asp:GridView ID="gvKetQua" ShowFooter="true" DataKeyNames="id" runat="server"
-        AutoGenerateColumns="false" CssClass="table table-bordered" Width="50%">
+        AutoGenerateColumns="false" CssClass="table table-bordered" Width="50%" OnSelectedIndexChanged="gvKetQua_SelectedIndexChanged">
         <Columns>
             <asp:BoundField DataField="masv" HeaderText="Mã sinh viên" />
             <asp:BoundField DataField="hotensv" HeaderText="Họ tên sinh viên" />
             <asp:TemplateField HeaderText="Điểm">
                 <ItemTemplate>
                     <asp:TextBox ID="txtDiem" runat="server" Text='<%# Eval("diem") %>' CssClass="formcontrol"></asp:TextBox>
+                    <asp:RangeValidator ID="rvdiem" runat="server" ErrorMessage="Điểm phải từ 0-10" ForeColor="Red" MaximumValue="10" MinimumValue="0" Type="Double" ControlToValidate="txtdiem">(!)</asp:RangeValidator>
                 </ItemTemplate>
                 <FooterTemplate>
                     <asp:Button ID="btLuu" runat="server" Text="Lưu điểm" CssClass="btn btn-success" OnClick="btLuu_Click"/>

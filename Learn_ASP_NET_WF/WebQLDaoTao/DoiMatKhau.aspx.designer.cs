@@ -24,13 +24,13 @@ namespace WebQLDaoTao
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtTenDangNhap control.
+        /// lbltendangnhap control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTenDangNhap;
+        protected global::System.Web.UI.WebControls.Label lbltendangnhap;
 
         /// <summary>
         /// txtMatKhau control.
@@ -51,13 +51,13 @@ namespace WebQLDaoTao
         protected global::System.Web.UI.WebControls.TextBox txtmatkhaumoi;
 
         /// <summary>
-        /// txtmkmoi control.
+        /// txtnlmkmoi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtmkmoi;
+        protected global::System.Web.UI.WebControls.TextBox txtnlmkmoi;
 
         /// <summary>
         /// btndoimatkhau control.
