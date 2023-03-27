@@ -31,10 +31,10 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Chọn">
                 <ItemTemplate>
-                    <asp:CheckBox ID="chkChon" runat="server" CssClass="radio-inline" />
+                    <asp:CheckBox ID="chkChon" runat="server" CssClass="radio-inline"/>
                 </ItemTemplate>
                 <FooterTemplate>
-                    <asp:Button ID="btXoa" runat="server" Text="Xóa" CssClass="btn btn-danger" OnClick="btXoa_Click" />
+                    <asp:Button ID="btXoa" runat="server" Text="Xóa" CssClass="btn btn-danger" OnClientClick="return confirm('Bạn có chắc muốn xóa kết quả này?')" OnClick="btXoa_Click" />
                 </FooterTemplate>
             </asp:TemplateField>
         </Columns>

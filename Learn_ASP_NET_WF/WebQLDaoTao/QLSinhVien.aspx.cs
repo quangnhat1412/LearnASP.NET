@@ -83,10 +83,8 @@ namespace WebQLDaoTao
             string masv = gvSinhvien.DataKeys[e.RowIndex].Value.ToString();
             string hosv = ((TextBox)gvSinhvien.Rows[e.RowIndex].Cells[1].Controls[0]).Text;
             string tensv = ((TextBox)gvSinhvien.Rows[e.RowIndex].Cells[2].Controls[0]).Text;
-            Boolean gioitinh;
             DropDownList gt = (DropDownList)gvSinhvien.Rows[e.RowIndex].FindControl("ddlgioitinh");
-            gioitinh = bool.Parse(gt.SelectedValue);
-            //Boolean gioitinh = ((CheckBox)gvSinhvien.Rows[e.RowIndex].Cells[3].Controls[0]).Checked;
+            Boolean gioitinh = bool.Parse(gt.SelectedValue);
             DateTime ngaysinh = DateTime.Parse(((TextBox)gvSinhvien.Rows[e.RowIndex].Cells[4].Controls[0]).Text);
             string noisinh = ((TextBox)gvSinhvien.Rows[e.RowIndex].Cells[5].Controls[0]).Text;
             string diachi = ((TextBox)gvSinhvien.Rows[e.RowIndex].Cells[6].Controls[0]).Text;

@@ -54,7 +54,7 @@ namespace WebQLDaoTao.Models
         {
             //1.Mo ket noi CSDL
             SqlConnection conn = new
-           SqlConnection(ConfigurationManager.ConnectionStrings["WebQLDaoTao_ConStr"].ConnectionString);
+            SqlConnection(ConfigurationManager.ConnectionStrings["WebQLDaoTao_ConStr"].ConnectionString);
             conn.Open();
             //2.tao truy van
             SqlCommand cmd = new SqlCommand("delete from khoa where makh=@makh", conn);

@@ -39,7 +39,9 @@ namespace WebQLDaoTao
 
         protected void btXoa_Click(object sender, EventArgs e)
         {
-
+            // Duyệt qua vòng lặp xem những kết quả nào dc check
+            // Kiểm tra (không cần kiểm tra)
+            // Xóa 
         }
 
         protected void btLuu_Click(object sender, EventArgs e)

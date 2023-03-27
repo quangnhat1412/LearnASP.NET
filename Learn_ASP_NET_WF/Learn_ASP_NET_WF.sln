@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02_CSDL_CoBan", "Lab02_C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebQLDaoTao", "WebQLDaoTao\WebQLDaoTao.csproj", "{584BFFA8-90B7-4A6D-BDFE-6156BE820AB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06_WebBanHoa", "Lab06_WebBanHoa\Lab06_WebBanHoa.csproj", "{5222550B-66E7-45A7-A6BB-2807B7BD04C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab07_BookStore", "Lab07_BookStore\Lab07_BookStore.csproj", "{13C8D327-B926-46CD-853F-7F6CD685CE2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{584BFFA8-90B7-4A6D-BDFE-6156BE820AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584BFFA8-90B7-4A6D-BDFE-6156BE820AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584BFFA8-90B7-4A6D-BDFE-6156BE820AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5222550B-66E7-45A7-A6BB-2807B7BD04C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5222550B-66E7-45A7-A6BB-2807B7BD04C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5222550B-66E7-45A7-A6BB-2807B7BD04C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5222550B-66E7-45A7-A6BB-2807B7BD04C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C8D327-B926-46CD-853F-7F6CD685CE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C8D327-B926-46CD-853F-7F6CD685CE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C8D327-B926-46CD-853F-7F6CD685CE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C8D327-B926-46CD-853F-7F6CD685CE2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

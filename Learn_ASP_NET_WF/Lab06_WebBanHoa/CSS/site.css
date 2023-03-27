@@ -1,0 +1,36 @@
+﻿.data_items{
+	width:100%;
+	padding:5px;	
+}
+.data_items .item {
+	float: left;
+	width: 24%;
+	margin: 5px;
+	text-align:center;
+}
+.data_items .item .i {
+	border: 1px solid black;
+	height: 200px;
+	padding: 10px;
+}
+
+.data_items .item .i img {
+	width: 150px;
+	height: 150px;
+	transform: rotate(1);
+	transition-duration: 0.3s;
+}
+
+.data_items .item:hover .i img {
+	transform:scale(1.1);
+}
+
+
+.data_items .item .t {
+	border: 1px solid black;
+	border-top:none;
+	padding: 5px
+}
+.data_items .item .t .vn{
+	color:red;
+}
