@@ -6,7 +6,7 @@
 <head runat="server">
     <title>
         <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+        </asp:ContentPlaceHolder>
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
     <link href="CSS/site.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -27,8 +27,14 @@
                     <li><a href="XemHoa.aspx">Xem Hoa</a></li>
                     <li><a href="TraCuu.aspx">Tra Cứu</a></li>
                     <li><a href="ThemHoa.aspx">Thêm Hoa</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav right">
+                    <li><a  href="GioHang.aspx">Giỏ Hàng</a></li>
+                    <asp:Label ID="lblsl" runat="server" Text=""></asp:Label>
                 </ul>
             </div>
+
         </nav>
         <%--Content--%>
         <div class="container">

@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\site.css" />
+    <Content Include="GioHang.aspx" />
     <Content Include="Global.asax" />
     <Content Include="ThemHoa.aspx" />
     <Content Include="TraCuu.aspx" />
@@ -75,6 +76,13 @@
     <Content Include="XemHoa.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

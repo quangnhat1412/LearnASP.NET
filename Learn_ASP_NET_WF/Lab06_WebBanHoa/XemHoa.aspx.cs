@@ -34,6 +34,18 @@ namespace Lab06_WebBanHoa
 
             // Thông báo cho người dùng hoặc chuyển hướng đến trang XemGio.aspx
             Response.Write("<script> alert('Đã thêm sản phẩm vào giỏ') </script>");
+
+            // Tăng giá trị của số lượng sản phẩm lên
+            //int sp = Convert.ToInt32(Session["SLSP"]);
+            //sp++;
+            //Session["SLSP"] = sp;
+
+            
+        }
+
+        protected void rptHoa_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
         }
     }
 }

@@ -29,8 +29,8 @@ namespace Lab06_WebBanHoa.Models
             conn.Open();
             SqlCommand cmd = new SqlCommand("select * from Hoa Where mahoa = @mahoa",conn);
             cmd.Parameters.AddWithValue("@mahoa", masp);
-            SqlDataReader dr = cmd.ExecuteReader();
 
+            SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
                 // Tạo đối tượng CartItem
@@ -44,19 +44,50 @@ namespace Lab06_WebBanHoa.Models
 
                 };
                 // Thêm vào giỏ ( lập trình thêm trong trường hợp sản phẩm đã có trong giỏ)
-
+                for (int i = 0; i < _Items.Count; i++)
+                {
+                    if (_Items[i].masp == masp)
+                    {
+                        _Items[i].soluong++;
+                        break;
+                    } 
+                }
                 _Items.Add(sp);
             }
         }
         // Xóa sản phẩm trong giỏ
         public void Delete (int masp)
         {
-
+            // Duyệt qua danh sách sảm phảm trong giỏ 
+            for (int i = 0; i < _Items.Count; i++)
+            {
+                if(_Items[i].masp == masp)
+                {
+                    _Items.RemoveAt(i);
+                    break;
+                }
+            }
         }
         // Phương thức cập nhật số lượng 
         public void Update(int masp, int soluong)
         {
-
+            // Duyệt qua danh sách sảm phảm trong giỏ 
+            for (int i = 0; i < _Items.Count; i++)
+            {
+                if (_Items[i].masp == masp)
+                {
+                    if (soluong > 0)
+                    {
+                        _Items[i].soluong = soluong;
+                        break;
+                    }
+                    else
+                    {
+                        _Items.RemoveAt(i);
+                        break;
+                    }
+                }
+            }
         }
         // Tính tổng thành tiền
         public int Total

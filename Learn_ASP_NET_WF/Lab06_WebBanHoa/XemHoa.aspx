@@ -33,7 +33,7 @@
             </ItemTemplate>
         </asp:DataList>--%>
         <div class ="data_items">
-        <asp:Repeater ID="rptHoa" runat="server" DataSourceID="sdshoatheoloai">
+        <asp:Repeater ID="rptHoa" runat="server" DataSourceID="sdshoatheoloai" OnItemCommand="rptHoa_ItemCommand">
             <ItemTemplate>
                 <div class="item">
                     <div class="i">
