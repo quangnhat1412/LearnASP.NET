@@ -43,6 +43,7 @@ namespace Lab06_WebBanHoa.Models
                     soluong = 1
 
                 };
+
                 // Thêm vào giỏ ( lập trình thêm trong trường hợp sản phẩm đã có trong giỏ)
                 for (int i = 0; i < _Items.Count; i++)
                 {
@@ -54,6 +55,7 @@ namespace Lab06_WebBanHoa.Models
                 }
                 _Items.Add(sp);
             }
+
         }
         // Xóa sản phẩm trong giỏ
         public void Delete (int masp)
